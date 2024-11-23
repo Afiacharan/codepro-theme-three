@@ -10,10 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
     <!-- icon cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+    <!-- aos css cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- style  -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -67,7 +70,7 @@
         <!-- section hero -->
        <div class="container-fluid mb-4">
         <div class="row hero-section">
-            <div class="col-md-6 p-5 justify-content-center align-content-center">
+            <div class="col-md-6 p-5 justify-content-center align-content-center" data-aos="fade-down-right"  data-aos-duration="3000">
                 <div class="main-heading">
                     <h1 class="hero-heading">Bettter Digital <br> Experience With Techie</h1>
                     <p class="text-white fs-5">We are team of talented designers making websites with Bootstrap</p>
@@ -76,8 +79,9 @@
                 </div>
             </div>
             <div class="col-md-6 p-5 justify-content-center align-content-center">
-                <img src="images/hero-img.png" alt="" width="100%" height="80%">
+                <img src="images/hero-img.png" alt="" class="animate-img" width="100%" height="90%">
             </div>
+            
         </div>
        </div>
        <!-- about-section -->
@@ -421,7 +425,7 @@
                 <div class="row">
                     <!-- Free Plan -->
                     <div class="col-md-4">
-                        <div class="pricing-card p-4 border">
+                        <div class="pricing-card p-4 py-5  border">
                             <h3 class="pricing-title">Free Plan</h3>
                             <h2 class="pricing-price">$0 <span class="text-secondary fs-5">/ 𝘮𝘰𝘯𝘵𝘩</span></h2>
                             <div class="pricing-description">
@@ -445,7 +449,7 @@
             
                     <!-- Business Plan -->
                     <div class="col-md-4">
-                        <div class="pricing-card p-4  border">
+                        <div class="pricing-card p-4 py-5 border">
                             <h3 class="pricing-title">Business Plan</h3>
                             <h2 class="pricing-price">$29 <span class="text-secondary fs-5">/ 𝘮𝘰𝘯𝘵𝘩</span></h2>
                             <div class="pricing-description">
@@ -470,7 +474,7 @@
             
                     <!-- Developer Plan -->
                     <div class="col-md-4">
-                        <div class="pricing-card p-4 border">
+                        <div class="pricing-card p-4 py-5 border">
                             <h3 class="pricing-title">Developer Plan</h3>
                             <h2 class="pricing-price">$49 <span class="text-secondary fs-5">/ 𝘮𝘰𝘯𝘵𝘩</span></h2>
                             <div class="pricing-description">
@@ -496,8 +500,196 @@
             </div>
             
           </div>
+          <!-- Frequently-section -->
+          <div class="container mb-4">
+            <div class="row">
+                <h1 class="services-heading my-3"> Frequently Asked Questions</h1>
+                <p class="hero-p text-center mb-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+            <div class="row w-75 m-auto">
+                <div class="accordion" id="accordionExample">
+                    <!-- accordion-item-one -->
+                    <div class="accordion-item my-4">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Non consectetur a erat nam at lectus urna duis?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+                             Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. </strong>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- accordion-item-two -->
+                    <div class="accordion-item my-4">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Feugiat scelerisque varius morbi enim nunc faucibus?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+                                 Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui. </strong>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- accordion-item-three -->
+                    <div class="accordion-item my-4">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      
+                            Dolor sit amet consectetur adipiscing elit pellentesque?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque 
+                                eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                            </strong>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- accordion-item-four -->
+                    <div class="accordion-item my-4">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        
+                            Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <strong>
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+                                 Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                              </strong>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- accordion-item-five -->
+                      <div class="accordion-item my-4">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        
+                            Tempus quam pellentesque nec nam aliquam sem et tortor?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <strong>
+                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
+                                 Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                              </strong>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- accordion-item-six -->
+                      <div class="accordion-item my-4">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Perspiciatis quod quo quos nulla quo illum ullam?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <strong>
+                                Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.
+                              </strong>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+          </div>
+          <!-- Team -->
+          <div class="container mb-4">
+            <div class="row">
+                <h1 class="services-heading my-3">Team</h1>
+                <p class="hero-p text-center mb-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-3 team-item">
+                    <div class="team-img">
+                        <img src="images/team11.PNG" alt="Team Member 1" class="">
+                    </div>
+                    <div class="team-body">
+                        <h4>Sir Abrar</h4>
+                        <h6>Developer</h6>
+                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Team Member 2 -->
+                <div class="col-md-3 team-item">
+                    <div class="team-img">
+                        <img src="images/team2.PNG" alt="Team Member 2">
+                    </div>
+                    <div class="team-body">
+                        <h4>Afia Charan</h4>
+                        <h6>Developer</h6>
+                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Team Member 3 -->
+                <div class="col-md-3 team-item">
+                    <div class="team-img">
+                        <img src="images/team3.PNG" alt="Team Member 3">
+                    </div>
+                    <div class="team-body">
+                        <h4>Sarah Smith</h4>
+                        <h6>Project Manager</h6>
+                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Team Member 4 -->
+                <div class="col-md-3 team-item">
+                    <div class="team-img">
+                        <img src="images/team4.PNG" alt="Team Member 4">
+                    </div>
+                    <div class="team-body">
+                        <h4>Alisha</h4>
+                        <h6>Developer</h6>
+                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
           <!-- contect-section -->
-           <div class="container mb-5">
+          <div class="container mb-5">
             <div class="row">
                 <h1 class="services-heading my-3"> Contact</h1>
                 <p class="hero-p text-center mb-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -578,9 +770,9 @@
                     
                 </div>
             </div>
-           </div>
+         </div>
           <!-- footer-section -->
-          <footer class="footer text-light py-5">
+         <footer class="footer text-light py-5">
             <div class="container">
                 <div class="row">
                     <!-- About Section -->
@@ -590,10 +782,10 @@
                         <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
                         <!-- Social Icons -->
                         <div class="d-flex  mt-5">
-                            <a href="#" class="text-light mx-4" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-light mx-4" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-light mx-4" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-light mx-4" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-light mx-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-light mx-3" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-light mx-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-light mx-3" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
         
@@ -635,15 +827,19 @@
                 <!-- Copyright -->
                 <div class="row mt-4">
                     <div class="col text-center">
-                        <p class="mb-0">© Copyright <strong>Techie</strong>. All Rights Reserved</p>
-                        <p class="mb-0">Designed by <a href="https://bootstrapmade.com" class="text-light text-decoration-none">BootstrapMade</a></p>
+                        <p class="mb-0">© Copyright <strong class="text-white">Codepro</strong>. All Rights Reserved</p>
+                        <p class="mb-0">Designed by <a href="https://github.com/Afiacharan" class="text-light text-decoration-none">
+                            Afia Charan</a></p>
                     </div>
                 </div>
             </div>
         </footer>
         
-
-
+        <!-- JS aos -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
