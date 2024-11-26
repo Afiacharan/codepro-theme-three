@@ -256,6 +256,17 @@ body {
   border-color: var(--blue-dard-color);
 }
 /* Frequently */
+.Frequently-row {
+  width: 80%; /* Default width for large devices */
+  margin: 0 auto; /* Center the row */
+}
+
+@media (max-width: 768px) {
+  .Frequently-row {
+    width: 100%; /* Full width for small devices */
+  }
+}
+
 .accordion-button {
   background-color: transparent !important; /* Remove background */
   color: var(--blue-dard-color) !important; /* Change text color to blue */
